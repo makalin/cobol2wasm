@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>COBOL in WebAssembly</title>
+</head>
+<body>
+  <h1>COBOL in WebAssembly</h1>
+  <pre id="output"></pre>
+  <script src="../wasm_output/hello.js"></script>
+  <script>
+    Module.onRuntimeInitialized = () => {
+      Module._main();
+    };
+  </script>
+</body>
+</html>
